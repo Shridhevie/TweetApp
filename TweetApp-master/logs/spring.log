@@ -1,0 +1,25 @@
+2022-08-23 10:22:10.408  INFO 7196 --- [main] com.tweetapp.TweetServiceApplication     : Starting TweetServiceApplication using Java 11.0.12 on ctsjava956 with PID 7196 (C:\Users\cogjava796\TweetService\target\classes started by cogjava796 in C:\Users\cogjava796\TweetService)
+2022-08-23 10:22:10.421  INFO 7196 --- [main] com.tweetapp.TweetServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-08-23 10:22:12.058  INFO 7196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-23 10:22:12.151  INFO 7196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+2022-08-23 10:22:12.536  INFO 7196 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3ec0b6c9-4fee-330a-8429-9ed731f4ce8a
+2022-08-23 10:22:13.347  INFO 7196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2022-08-23 10:22:13.365  INFO 7196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-23 10:22:13.367  INFO 7196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-23 10:22:13.703  INFO 7196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-23 10:22:13.703  INFO 7196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3157 ms
+2022-08-23 10:22:14.169  INFO 7196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-23 10:22:14.262  INFO 7196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-23 10:22:14.554  INFO 7196 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-23 10:22:14.751  INFO 7196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-23 10:22:15.311  INFO 7196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-23 10:22:15.339  INFO 7196 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-23 10:22:17.102  INFO 7196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-23 10:22:17.116  INFO 7196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-23 10:22:17.265  WARN 7196 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-23 10:22:18.802  INFO 7196 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-23 10:22:18.885  INFO 7196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2022-08-23 10:22:18.948  INFO 7196 --- [main] com.tweetapp.TweetServiceApplication     : Started TweetServiceApplication in 9.397 seconds (JVM running for 10.403)
+2022-08-23 10:23:42.732  INFO 7196 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-23 10:23:42.734  INFO 7196 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-23 10:23:42.739  INFO 7196 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
