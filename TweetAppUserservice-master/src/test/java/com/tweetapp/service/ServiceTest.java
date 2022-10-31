@@ -33,18 +33,18 @@ public class ServiceTest {
     @Test
     void loadUserByUsernameTest() {
 
-        UserData userData=new UserData("Krishna","Naga","Naga@gmail.com","Skrishna14","admin12345","admin12345",999999990);
+        UserData userData=new UserData("Sridevi","Koyilada","Sridevi@gmail.com","Sridevi2408","Sridevi@123","Sridevi@123",999999990);
         Optional<UserData> data =Optional.of(userData) ;
-        when(userservice.findById("Skrishna14")).thenReturn(data);
-        UserDetails loadUserByUsername2 = custdetailservice.loadUserByUsername("Skrishna14");
+        when(userservice.findById("Sridevi2408")).thenReturn(data);
+        UserDetails loadUserByUsername2 = custdetailservice.loadUserByUsername("Sridevi2408");
         assertEquals(userData.getUserName(),loadUserByUsername2.getUsername());
     }
     @Test
     void loadUserByUsernameTestFail() {
 
         Optional<UserData> data =Optional.ofNullable(null) ;
-        when(userservice.findById("Skrishna16")).thenReturn(data);
-        assertThrows( UnauthorizedException.class,()->custdetailservice.loadUserByUsername("Skrishna16"));
+        when(userservice.findById("Sridevi2408")).thenReturn(data);
+        assertThrows( UnauthorizedException.class,()->custdetailservice.loadUserByUsername("Sridevi2408"));
     }
 
 
@@ -52,7 +52,7 @@ public class ServiceTest {
     @Test
     void userNotFound() {
 
-        when(userservice.findById("Skrishna14")).thenReturn(null);
-        assertThrows( UnauthorizedException.class,()->custdetailservice.loadUserByUsername("Skrishna14"));
+        when(userservice.findById("Sridevi2408")).thenReturn(null);
+        assertThrows( UnauthorizedException.class,()->custdetailservice.loadUserByUsername("Sridevi2408"));
     }
 }

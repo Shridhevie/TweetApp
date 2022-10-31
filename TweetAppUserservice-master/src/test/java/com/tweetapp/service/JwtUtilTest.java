@@ -25,7 +25,7 @@ public class JwtUtilTest {
 
     @Test
     void generateTokenTest() {
-        userdetails = new User("Skrishna13", "admin12345", new ArrayList<>());
+        userdetails = new User("Sridevi2408", "Sridevi@123", new ArrayList<>());
         JwtUtil jwt = new JwtUtil();
         String generateToken = jwt.generateToken(userdetails);
         assertNotNull(generateToken);
@@ -34,7 +34,7 @@ public class JwtUtilTest {
 
     @Test
     void validateTokenTest() {
-        userdetails = new User("Skrishna13", "admin12345", new ArrayList<>());
+        userdetails = new User("Sridevi2408", "Sridevi@123", new ArrayList<>());
         JwtUtil jwt = new JwtUtil();
         String generateToken = jwt.generateToken(userdetails);
         Boolean validateToken = jwt.validateToken(generateToken);
@@ -43,7 +43,7 @@ public class JwtUtilTest {
 
     @Test
     void validateTokenNegativeTest() {
-        userdetails = new User("Skrishna13", "admin12345", new ArrayList<>());
+        userdetails = new User("Sridevi2408", "Sridevi@123", new ArrayList<>());
         JwtUtil jwt = new JwtUtil();
        // String generateToken = jwt.generateToken(userdetails);
         Boolean validateToken = jwt.validateToken(null);

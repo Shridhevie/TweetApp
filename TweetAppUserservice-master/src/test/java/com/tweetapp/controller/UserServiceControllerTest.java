@@ -37,24 +37,24 @@ public class UserServiceControllerTest {
     @Test
     void register() {
 
-        UserData userData=new UserData("Krishna","Naga","Naga@gmail.com","Skrishna14","admin12345","admin12345",999999990);
+        UserData userData=new UserData("Sridevi","Koyilada","Sridevi@gmail.com","Sridevi2408","Sridevi@123","Sridevi@123",999999990);
         ResponseEntity<Object> newObject=new ResponseEntity<>("User Added Successfully", HttpStatus.CREATED);
         when(userServices.register(userData)).thenReturn(newObject.toString());
         assertEquals(201, userController.register(userData).getStatusCodeValue());
     }
     @Test
     void login() {
-        data=new LoginDetails("Skrishna14","admin12345");
-       AuthResponse authResponse=new AuthResponse("Skrishna14",true,"Bearer token","Krishna","Naga");
+        data=new LoginDetails("Sridevi2408","Sridevi@123");
+       AuthResponse authResponse=new AuthResponse("Skrishna14",true,"Bearer token","Sridevi","Koyilada");
        when(userServices.login(data)).thenReturn(authResponse);
         assertEquals(200, userController.login(data).getStatusCodeValue());
     }
 
     @Test
     void forgotPassword() {
-        data=new LoginDetails("Skrishna14","admin12345");
+        data=new LoginDetails("Sridevi2408","Sridevi@123");
         when(userServices.forgotPassword(data)).thenReturn(new ResponseEntity<>(new AuthResponse(),HttpStatus.OK).toString());
-        assertEquals(200, userController.forgotPassword("kumar", data).getStatusCodeValue());
+        assertEquals(200, userController.forgotPassword("sridevi", data).getStatusCodeValue());
     }
     @Test
     void validate() {
